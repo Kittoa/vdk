@@ -3,7 +3,7 @@ package fmp4io
 import (
 	"bytes"
 
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 const DREF = Tag(0x64726566)

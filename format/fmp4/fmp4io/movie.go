@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 const MOOV = Tag(0x6d6f6f76)

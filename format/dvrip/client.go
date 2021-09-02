@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec"
-	"github.com/kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec"
+	"github.com/Kittoa/vdk/codec/h264parser"
 )
 
 const (

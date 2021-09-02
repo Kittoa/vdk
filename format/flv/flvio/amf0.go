@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 type AMF0ParseError struct {

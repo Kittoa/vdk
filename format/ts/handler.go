@@ -3,8 +3,8 @@ package ts
 import (
 	"io"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/av/avutil"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av/avutil"
 )
 
 func Handler(h *avutil.RegisterHandler) {

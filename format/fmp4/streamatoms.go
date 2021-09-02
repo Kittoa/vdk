@@ -3,12 +3,12 @@ package fmp4
 import (
 	"fmt"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/aacparser"
-	"github.com/kittoa/vdk/codec/h264parser"
-	"github.com/kittoa/vdk/codec/opusparser"
-	"github.com/kittoa/vdk/format/fmp4/esio"
-	"github.com/kittoa/vdk/format/fmp4/fmp4io"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/aacparser"
+	"github.com/Kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/codec/opusparser"
+	"github.com/Kittoa/vdk/format/fmp4/esio"
+	"github.com/Kittoa/vdk/format/fmp4/fmp4io"
 )
 
 // Track creates a TRAK atom for this stream

@@ -1,6 +1,6 @@
 package mp4f
 
-import "github.com/kittoa/vdk/format/mp4/mp4io"
+import "github.com/Kittoa/vdk/format/mp4/mp4io"
 
 type FDummy struct {
 	Data []byte

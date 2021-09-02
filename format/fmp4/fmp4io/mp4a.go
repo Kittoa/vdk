@@ -1,8 +1,8 @@
 package fmp4io
 
 import (
-	"github.com/kittoa/vdk/format/fmp4/esio"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/format/fmp4/esio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 const MP4A = Tag(0x6d703461)

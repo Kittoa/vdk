@@ -3,10 +3,10 @@ package fmp4
 import (
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/h264parser"
-	"github.com/kittoa/vdk/format/fmp4/fmp4io"
-	"github.com/kittoa/vdk/format/fmp4/fragment"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/format/fmp4/fmp4io"
+	"github.com/Kittoa/vdk/format/fmp4/fragment"
 )
 
 // TrackFragmenter writes a single audio or video stream as a series of CMAF (fMP4) fragments

@@ -3,8 +3,8 @@ package rtsp
 import (
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/format/rtsp/sdp"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/format/rtsp/sdp"
 )
 
 type Stream struct {

@@ -5,10 +5,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/av/avutil"
-	"github.com/kittoa/vdk/av/pktque"
-	"github.com/kittoa/vdk/av/transcode"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av/avutil"
+	"github.com/Kittoa/vdk/av/pktque"
+	"github.com/Kittoa/vdk/av/transcode"
 )
 
 var Debug bool

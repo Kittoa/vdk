@@ -10,8 +10,8 @@ import (
 	"github.com/pion/interceptor"
 	"github.com/pion/webrtc/v3"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/h264parser"
 	"github.com/pion/webrtc/v3/pkg/media"
 )
 

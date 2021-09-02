@@ -17,13 +17,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/av/avutil"
-	"github.com/kittoa/vdk/codec"
-	"github.com/kittoa/vdk/codec/aacparser"
-	"github.com/kittoa/vdk/codec/h264parser"
-	"github.com/kittoa/vdk/format/rtsp/sdp"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av/avutil"
+	"github.com/Kittoa/vdk/codec"
+	"github.com/Kittoa/vdk/codec/aacparser"
+	"github.com/Kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/format/rtsp/sdp"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 var ErrCodecDataChange = fmt.Errorf("rtsp: codec data change, please call HandleCodecDataChange()")

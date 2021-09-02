@@ -5,10 +5,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/aacparser"
-	"github.com/kittoa/vdk/codec/h264parser"
-	"github.com/kittoa/vdk/format/ts/tsio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/aacparser"
+	"github.com/Kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/format/ts/tsio"
 )
 
 var CodecTypes = []av.CodecType{av.H264, av.AAC}

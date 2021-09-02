@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/format/fmp4/fmp4io"
-	"github.com/kittoa/vdk/format/fmp4/fragment"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/format/fmp4/fmp4io"
+	"github.com/Kittoa/vdk/format/fmp4/fragment"
 )
 
 var (

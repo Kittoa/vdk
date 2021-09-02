@@ -1,13 +1,13 @@
 package format
 
 import (
-	"github.com/kittoa/vdk/av/avutil"
-	"github.com/kittoa/vdk/format/aac"
-	"github.com/kittoa/vdk/format/flv"
-	"github.com/kittoa/vdk/format/mp4"
-	"github.com/kittoa/vdk/format/rtmp"
-	"github.com/kittoa/vdk/format/rtsp"
-	"github.com/kittoa/vdk/format/ts"
+	"github.com/Kittoa/vdk/av/avutil"
+	"github.com/Kittoa/vdk/format/aac"
+	"github.com/Kittoa/vdk/format/flv"
+	"github.com/Kittoa/vdk/format/mp4"
+	"github.com/Kittoa/vdk/format/rtmp"
+	"github.com/Kittoa/vdk/format/rtsp"
+	"github.com/Kittoa/vdk/format/ts"
 )
 
 func RegisterAll() {

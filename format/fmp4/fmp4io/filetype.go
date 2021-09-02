@@ -1,6 +1,6 @@
 package fmp4io
 
-import "github.com/kittoa/vdk/utils/bits/pio"
+import "github.com/Kittoa/vdk/utils/bits/pio"
 
 const FTYP = Tag(0x66747970)
 

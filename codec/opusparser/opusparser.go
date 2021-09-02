@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av"
 )
 
 type CodecData struct {

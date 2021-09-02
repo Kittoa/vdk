@@ -14,11 +14,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/av/avutil"
-	"github.com/kittoa/vdk/format/flv"
-	"github.com/kittoa/vdk/format/flv/flvio"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av/avutil"
+	"github.com/Kittoa/vdk/format/flv"
+	"github.com/Kittoa/vdk/format/flv/flvio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 var Debug bool

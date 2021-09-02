@@ -9,7 +9,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av"
 )
 
 type HandlerDemuxer struct {

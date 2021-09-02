@@ -6,9 +6,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/av/avutil"
-	"github.com/kittoa/vdk/codec/aacparser"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av/avutil"
+	"github.com/Kittoa/vdk/codec/aacparser"
 )
 
 type Muxer struct {

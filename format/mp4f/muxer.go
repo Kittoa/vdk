@@ -6,14 +6,14 @@ import (
 	"os"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/aacparser"
-	"github.com/kittoa/vdk/codec/h264parser"
-	"github.com/kittoa/vdk/codec/h265parser"
-	"github.com/kittoa/vdk/format/fmp4/fmp4io"
-	"github.com/kittoa/vdk/format/mp4/mp4io"
-	"github.com/kittoa/vdk/format/mp4f/mp4fio"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/aacparser"
+	"github.com/Kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/codec/h265parser"
+	"github.com/Kittoa/vdk/format/fmp4/fmp4io"
+	"github.com/Kittoa/vdk/format/mp4/mp4io"
+	"github.com/Kittoa/vdk/format/mp4f/mp4fio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 type Muxer struct {

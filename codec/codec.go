@@ -3,8 +3,8 @@ package codec
 import (
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/fake"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/fake"
 )
 
 type OpusCodecData struct {

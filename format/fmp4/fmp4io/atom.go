@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 type Tag uint32

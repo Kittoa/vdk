@@ -6,11 +6,11 @@ import (
 	"io"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/aacparser"
-	"github.com/kittoa/vdk/codec/h264parser"
-	"github.com/kittoa/vdk/format/ts/tsio"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/aacparser"
+	"github.com/Kittoa/vdk/codec/h264parser"
+	"github.com/Kittoa/vdk/format/ts/tsio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 type Demuxer struct {

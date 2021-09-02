@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/utils/bits"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/utils/bits"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 const (

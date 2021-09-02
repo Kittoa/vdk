@@ -1,7 +1,7 @@
 package pktque
 
 import (
-	"github.com/kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av"
 )
 
 type Buf struct {

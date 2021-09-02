@@ -1,7 +1,7 @@
 package fmp4io
 
 import (
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 const (

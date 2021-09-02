@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av"
 )
 
 type Session struct {

@@ -1,6 +1,6 @@
 package fmp4io
 
-import "github.com/kittoa/vdk/utils/bits/pio"
+import "github.com/Kittoa/vdk/utils/bits/pio"
 
 const AVC1 = Tag(0x61766331)
 

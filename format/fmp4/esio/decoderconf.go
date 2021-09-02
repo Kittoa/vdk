@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/codec/aacparser"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/codec/aacparser"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 type DecoderConfigDescriptor struct {

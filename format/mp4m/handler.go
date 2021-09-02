@@ -3,8 +3,8 @@ package mp4
 import (
 	"io"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/av/avutil"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av/avutil"
 )
 
 var CodecTypes = []av.CodecType{av.H264, av.AAC}

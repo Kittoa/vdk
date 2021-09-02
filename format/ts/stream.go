@@ -3,8 +3,8 @@ package ts
 import (
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/format/ts/tsio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/format/ts/tsio"
 )
 
 type Stream struct {

@@ -3,10 +3,10 @@ package mp4f
 import (
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/format/mp4"
-	"github.com/kittoa/vdk/format/mp4/mp4io"
-	"github.com/kittoa/vdk/format/mp4f/mp4fio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/format/mp4"
+	"github.com/Kittoa/vdk/format/mp4/mp4io"
+	"github.com/Kittoa/vdk/format/mp4f/mp4fio"
 )
 
 type Stream struct {

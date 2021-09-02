@@ -1,8 +1,8 @@
 package mp4fio
 
 import (
-	"github.com/kittoa/vdk/format/mp4/mp4io"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/format/mp4/mp4io"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 func (self MovieFrag) Tag() mp4io.Tag {

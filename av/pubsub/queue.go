@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/av/pktque"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/av/pktque"
 )
 
 //        time

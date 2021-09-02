@@ -3,7 +3,7 @@ package fmp4io
 import (
 	"fmt"
 
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 const MOOF = Tag(0x6d6f6f66)

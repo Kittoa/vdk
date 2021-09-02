@@ -1,11 +1,11 @@
 package fmp4
 
 import (
-	"github.com/kittoa/vdk/av"
-	"github.com/kittoa/vdk/format/fmp4/fmp4io"
-	"github.com/kittoa/vdk/format/fmp4/fragment"
-	"github.com/kittoa/vdk/format/fmp4/timescale"
-	"github.com/kittoa/vdk/utils/bits/pio"
+	"github.com/Kittoa/vdk/av"
+	"github.com/Kittoa/vdk/format/fmp4/fmp4io"
+	"github.com/Kittoa/vdk/format/fmp4/fragment"
+	"github.com/Kittoa/vdk/format/fmp4/timescale"
+	"github.com/Kittoa/vdk/utils/bits/pio"
 )
 
 type fragmentWithData struct {
