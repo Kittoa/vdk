@@ -1,4 +1,4 @@
-module github.com/Kittoa/vdk
+module github.com/kittoa/vdk
 
 go 1.15
 

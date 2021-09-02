@@ -6,9 +6,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/utils/bits"
-	"github.com/deepch/vdk/utils/bits/pio"
+	"github.com/kittoa/vdk/av"
+	"github.com/kittoa/vdk/utils/bits"
+	"github.com/kittoa/vdk/utils/bits/pio"
 )
 
 type SPSInfo struct {

@@ -20,8 +20,8 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/codec/h264parser"
+	"github.com/kittoa/vdk/av"
+	"github.com/kittoa/vdk/codec/h264parser"
 )
 
 type VideoDecoder struct {

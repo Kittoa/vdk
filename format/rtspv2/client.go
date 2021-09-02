@@ -17,12 +17,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/codec"
-	"github.com/deepch/vdk/codec/aacparser"
-	"github.com/deepch/vdk/codec/h264parser"
-	"github.com/deepch/vdk/codec/h265parser"
-	"github.com/deepch/vdk/format/rtsp/sdp"
+	"github.com/kittoa/vdk/av"
+	"github.com/kittoa/vdk/codec"
+	"github.com/kittoa/vdk/codec/aacparser"
+	"github.com/kittoa/vdk/codec/h264parser"
+	"github.com/kittoa/vdk/codec/h265parser"
+	"github.com/kittoa/vdk/format/rtsp/sdp"
 )
 
 const (
@@ -625,7 +625,7 @@ func (client *RTSPClient) RTPDemuxer(payloadRAW *[]byte) ([]*av.Packet, bool) {
 				case naluType == 8:
 					client.CodecUpdatePPS(nal)
 				case naluType == 24:
-					client.Println("24 Type need add next version report https://github.com/deepch/vdk")
+					client.Println("24 Type need add next version report https://github.com/kittoa/vdk")
 				case naluType == 28:
 					fuIndicator := content[offset]
 					fuHeader := content[offset+1]

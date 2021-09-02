@@ -6,8 +6,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/deepch/vdk/av"
-	"github.com/deepch/vdk/utils/bits"
+	"github.com/kittoa/vdk/av"
+	"github.com/kittoa/vdk/utils/bits"
 )
 
 // copied from libavcodec/mpeg4audio.h
