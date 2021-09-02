@@ -11,6 +11,7 @@ import (
 	"github.com/deepch/vdk/codec/aacparser"
 	"github.com/deepch/vdk/codec/fake"
 	"github.com/deepch/vdk/codec/h264parser"
+	"github.com/deepch/vdk/codec/h265parser"
 	"github.com/deepch/vdk/format/flv/flvio"
 	"github.com/deepch/vdk/utils/bits/pio"
 )
@@ -223,6 +224,18 @@ func CodecDataToTag(stream av.CodecData) (_tag flvio.Tag, ok bool, err error) {
 		ok = true
 		_tag = tag
 
+	case av.H265:
+		h265 := stream.(h265parser.CodecData)
+		tag := flvio.Tag{
+			Type:          flvio.TAG_VIDEO,
+			AVCPacketType: flvio.AVC_SEQHDR,
+			CodecID:       flvio.VIDEO_H265,
+			Data:          h265.AVCDecoderConfRecordBytes(),
+			FrameType:     flvio.FRAME_KEY,
+		}
+		ok = true
+		_tag = tag
+
 	case av.NELLYMOSER:
 	case av.SPEEX:
 
@@ -264,6 +277,20 @@ func PacketToTag(pkt av.Packet, stream av.CodecData) (tag flvio.Tag, timestamp i
 			Type:            flvio.TAG_VIDEO,
 			AVCPacketType:   flvio.AVC_NALU,
 			CodecID:         flvio.VIDEO_H264,
+			Data:            pkt.Data,
+			CompositionTime: flvio.TimeToTs(pkt.CompositionTime),
+		}
+		if pkt.IsKeyFrame {
+			tag.FrameType = flvio.FRAME_KEY
+		} else {
+			tag.FrameType = flvio.FRAME_INTER
+		}
+
+	case av.H265:
+		tag = flvio.Tag{
+			Type:            flvio.TAG_VIDEO,
+			AVCPacketType:   flvio.AVC_NALU,
+			CodecID:         flvio.VIDEO_H265,
 			Data:            pkt.Data,
 			CompositionTime: flvio.TimeToTs(pkt.CompositionTime),
 		}

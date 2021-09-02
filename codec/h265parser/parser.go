@@ -3,6 +3,7 @@ package h265parser
 import (
 	"bytes"
 	"errors"
+	"encoding/binary"
 	"fmt"
 
 	"github.com/deepch/vdk/av"
@@ -491,7 +492,8 @@ func NewCodecDataFromVPSAndSPSAndPPS(vps, sps, pps []byte) (self CodecData, err 
 	buf := make([]byte, recordinfo.Len())
 	recordinfo.Marshal(buf, self.SPSInfo)
 	self.RecordInfo = recordinfo
-	self.Record = buf
+	//self.Record = buf
+	self.Record = NewCodecDataFromHEVCDecoder(vps, sps, pps)
 	return
 }
 
@@ -503,6 +505,41 @@ type AVCDecoderConfRecord struct {
 	VPS                  [][]byte
 	SPS                  [][]byte
 	PPS                  [][]byte
+}
+
+func NewCodecDataFromHEVCDecoder(VPS, SPS, PPS []byte) []byte {
+	writer := bytes.NewBuffer([]byte{})
+
+	binary.Write(writer, binary.BigEndian, uint8(0x01))
+	binary.Write(writer, binary.BigEndian, uint8(0x01))
+	binary.Write(writer, binary.BigEndian, []byte{0x60, 0x00, 0x00, 0x00})
+	binary.Write(writer, binary.BigEndian, []byte{0x90, 0x00, 0x00, 0x00, 0x00, 0x00})
+	binary.Write(writer, binary.BigEndian, uint8(0x78))
+	binary.Write(writer, binary.BigEndian, uint16(0xf000))
+	binary.Write(writer, binary.BigEndian, uint8(0xfc))
+	binary.Write(writer, binary.BigEndian, uint8(0xfd))
+	binary.Write(writer, binary.BigEndian, uint8(0xf8))
+	binary.Write(writer, binary.BigEndian, uint8(0xf8))
+	binary.Write(writer, binary.BigEndian, uint16(0x0000))
+	binary.Write(writer, binary.BigEndian, uint8(0x0f))
+	binary.Write(writer, binary.BigEndian, uint8(3))
+
+	binary.Write(writer, binary.BigEndian, uint8(0x20))
+	binary.Write(writer, binary.BigEndian, uint16(0x0001))
+	binary.Write(writer, binary.BigEndian, uint16(len(VPS)))
+	binary.Write(writer, binary.BigEndian, VPS)
+
+	binary.Write(writer, binary.BigEndian, uint8(0x21))
+	binary.Write(writer, binary.BigEndian, uint16(0x0001))
+	binary.Write(writer, binary.BigEndian, uint16(len(SPS)))
+	binary.Write(writer, binary.BigEndian, SPS)
+
+	binary.Write(writer, binary.BigEndian, uint8(0x22))
+	binary.Write(writer, binary.BigEndian, uint16(0x0001))
+	binary.Write(writer, binary.BigEndian, uint16(len(PPS)))
+	binary.Write(writer, binary.BigEndian, PPS)
+
+	return writer.Bytes()
 }
 
 var ErrDecconfInvalid = fmt.Errorf("h265parser: AVCDecoderConfRecord invalid")
