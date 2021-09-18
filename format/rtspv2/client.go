@@ -86,6 +86,7 @@ type RTSPClient struct {
 	PreVideoTS          int64
 	PreSequenceNumber   int
 	FPS                 int
+	WaitCodec           bool
 }
 
 type RTSPClientOptions struct {
@@ -153,6 +154,7 @@ func Dial(options RTSPClientOptions) (*RTSPClient, error) {
 					}
 				} else {
 					client.CodecData = append(client.CodecData, h264parser.CodecData{})
+					client.WaitCodec = true
 				}
 				client.FPS = i2.FPS
 				client.videoCodec = av.H264
@@ -734,7 +736,7 @@ func (client *RTSPClient) RTPDemuxer(payloadRAW *[]byte) ([]*av.Packet, bool) {
 					if _, _, _, _, err := aacparser.ParseADTSHeader(frame); err == nil {
 						frame = frame[7:]
 					}
-					duration = time.Duration((float32(1024)/float32(client.AudioTimeScale))*1000) * time.Millisecond
+					duration = time.Duration((float32(1024)/float32(client.AudioTimeScale))*1000*1000*1000) * time.Nanosecond
 					client.AudioTimeLine += duration
 					retmap = append(retmap, &av.Packet{
 						Data:            frame,
